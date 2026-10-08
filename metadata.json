@@ -1,0 +1,8 @@
+{
+  "name": "TireGuard AI - Smart Dumper Truck Fleet Protection",
+  "description": "Smart AI-powered tire telematics and fleet safety system for mining dumper trucks: Predict, Prevent, and Action.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

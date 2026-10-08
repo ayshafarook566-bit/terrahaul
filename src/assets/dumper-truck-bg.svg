@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <!-- Sky & Pit Atmosphere Gradients -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17" />
+      <stop offset="40%" stop-color="#141a29" />
+      <stop offset="70%" stop-color="#241b17" />
+      <stop offset="100%" stop-color="#0e131d" />
+    </linearGradient>
+
+    <!-- Mine Strata & Quarry Walls -->
+    <linearGradient id="pitWallGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1612" />
+      <stop offset="50%" stop-color="#2e221b" />
+      <stop offset="100%" stop-color="#141824" />
+    </linearGradient>
+
+    <!-- Industrial Dumper Truck Caterpillar Gold / Amber Body -->
+    <linearGradient id="truckYellow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b45309" />
+      <stop offset="25%" stop-color="#f59e0b" />
+      <stop offset="50%" stop-color="#fbbf24" />
+      <stop offset="75%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#92400e" />
+    </linearGradient>
+
+    <linearGradient id="truckBedInterior" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e1814" />
+      <stop offset="50%" stop-color="#2d241d" />
+      <stop offset="100%" stop-color="#17120e" />
+    </linearGradient>
+
+    <!-- Heavy Cast Steel / Chassis Gradient -->
+    <linearGradient id="heavySteel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Hydraulic Chrome Cylinder -->
+    <linearGradient id="chromeCylinder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64748b" />
+      <stop offset="30%" stop-color="#f8fafc" />
+      <stop offset="70%" stop-color="#94a3b8" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+
+    <!-- Giant Heavy Mining Tire Rubber (4-Meter Diameter) -->
+    <radialGradient id="tireRubber" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2b313d" />
+      <stop offset="45%" stop-color="#161b24" />
+      <stop offset="85%" stop-color="#0c1017" />
+      <stop offset="100%" stop-color="#06080d" />
+    </radialGradient>
+
+    <radialGradient id="wheelRim" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="50%" stop-color="#d97706" />
+      <stop offset="85%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </radialGradient>
+
+    <!-- Headlight & Dust Glow -->
+    <radialGradient id="headlightGlow" cx="20%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.8" />
+      <stop offset="30%" stop-color="#f59e0b" stop-opacity="0.4" />
+      <stop offset="70%" stop-color="#d97706" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Cyan Telemetry Sensor Glow -->
+    <radialGradient id="sensorCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#0284c7" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- BACKGROUND: Open Pit Mine Quarry Strata -->
+  <rect width="1920" height="1080" fill="url(#skyGrad)" />
+
+  <!-- Distant Quarry Terraces / Benches -->
+  <path d="M0,320 L260,310 L440,350 L750,330 L1100,370 L1450,340 L1720,380 L1920,360 L1920,1080 L0,1080 Z" fill="#151b27" opacity="0.6" />
+  <path d="M0,450 L320,440 L600,470 L950,440 L1300,480 L1680,450 L1920,470 L1920,1080 L0,1080 Z" fill="#1a1e2b" opacity="0.7" />
+  <path d="M0,580 L400,560 L820,600 L1250,570 L1600,610 L1920,590 L1920,1080 L0,1080 Z" fill="#1e1814" opacity="0.9" />
+
+  <!-- Haul Road Surface at Base -->
+  <polygon points="0,780 1920,740 1920,1080 0,1080" fill="#131722" />
+  <path d="M0,780 Q960,770 1920,740" stroke="#f59e0b" stroke-width="2" stroke-dasharray="24 16" opacity="0.3" />
+
+  <!-- DUST HAZE / INDUSTRIAL ATMOSPHERE -->
+  <ellipse cx="600" cy="850" rx="900" ry="180" fill="#f59e0b" opacity="0.08" />
+  <ellipse cx="1400" cy="820" rx="700" ry="140" fill="#38bdf8" opacity="0.05" />
+
+  <!-- HEADLIGHT BEAMS ILLUMINATING HAUL ROAD -->
+  <polygon points="480,680 0,550 0,950 480,720" fill="url(#headlightGlow)" opacity="0.6" />
+
+  <!-- ============================================================== -->
+  <!-- MAIN HERO INDUSTRIAL DUMPER TRUCK (400-TON CLASS MINING HAULER) -->
+  <!-- ============================================================== -->
+  <g id="dumper-truck" transform="translate(180, 140)">
+
+    <!-- DUMPER TRUCK CANOPY OVER CABIN (Protective Canopy Shield) -->
+    <path d="M380,240 L720,240 L820,320 L400,320 Z" fill="url(#truckYellow)" />
+    <path d="M380,240 L400,320" stroke="#78350f" stroke-width="6" />
+
+    <!-- ROCK ORE HEAP IN TRUCK BED -->
+    <path d="M720,230 Q920,170 1140,210 Q1280,225 1420,290 L1400,340 L680,340 Z" fill="#38281f" />
+    <polygon points="860,200 920,180 970,220 910,230" fill="#523a2c" />
+    <polygon points="1060,210 1120,195 1170,225 1100,240" fill="#422f23" />
+    <polygon points="1240,230 1310,215 1360,250 1290,265" fill="#5c4232" />
+
+    <!-- GIANT HAUL DUMP BED / DUMP BODY (Reinforced Ribbed Steel Box) -->
+    <path d="M680,270 L1460,330 L1440,600 L760,590 Z" fill="url(#truckYellow)" />
+    <!-- Structural Stiffener Ribs on Dump Bed Side -->
+    <path d="M740,310 L740,580" stroke="#92400e" stroke-width="12" />
+    <path d="M840,320 L840,585" stroke="#92400e" stroke-width="14" />
+    <path d="M960,330 L960,588" stroke="#92400e" stroke-width="14" />
+    <path d="M1080,340 L1080,590" stroke="#92400e" stroke-width="14" />
+    <path d="M1200,350 L1200,592" stroke="#92400e" stroke-width="14" />
+    <path d="M1320,360 L1320,595" stroke="#92400e" stroke-width="14" />
+
+    <!-- Dump Bed Pivot Pin & Rear Hinge -->
+    <circle cx="1380" cy="620" r="28" fill="#1e293b" stroke="#f59e0b" stroke-width="6" />
+
+    <!-- HYDRAULIC HOIST CYLINDERS (Dual Stage Telescopic Chrome Cylinders) -->
+    <polygon points="980,680 995,680 965,560 950,560" fill="url(#chromeCylinder)" />
+    <polygon points="975,560 990,560 970,490 955,490" fill="url(#chromeCylinder)" />
+
+    <!-- OPERATOR CABIN & DECK -->
+    <!-- Walkway deck railing -->
+    <path d="M420,330 L660,330 L660,480 L420,480 Z" fill="#1e293b" />
+    <rect x="440" y="340" width="130" height="120" rx="10" fill="#0f172a" stroke="#d97706" stroke-width="4" />
+    <!-- Cabin Tinted Window -->
+    <polygon points="450,350 550,350 560,420 450,420" fill="#38bdf8" opacity="0.65" />
+    <!-- Cab Interior Silhouettes -->
+    <circle cx="490" cy="385" r="16" fill="#0f172a" />
+    <path d="M470,420 C470,400 510,400 510,420 Z" fill="#0f172a" />
+    <!-- Amber Safety Beacon on Cab Roof -->
+    <circle cx="470" cy="335" r="8" fill="#f59e0b" />
+    <circle cx="470" cy="335" r="18" fill="#fbbf24" opacity="0.4" />
+
+    <!-- ACCESS STAIRWAY / LADDER (Front Diagonal Access) -->
+    <line x1="380" y1="480" x2="480" y2="670" stroke="#f59e0b" stroke-width="8" />
+    <line x1="400" y1="480" x2="500" y2="670" stroke="#f59e0b" stroke-width="8" />
+    <line x1="390" y1="510" x2="410" y2="510" stroke="#d97706" stroke-width="5" />
+    <line x1="410" y1="550" x2="430" y2="550" stroke="#d97706" stroke-width="5" />
+    <line x1="430" y1="590" x2="450" y2="590" stroke="#d97706" stroke-width="5" />
+    <line x1="450" y1="630" x2="470" y2="630" stroke="#d97706" stroke-width="5" />
+
+    <!-- ENGINE HOOD / RADIATOR GRILLE & FRONT FASCIA -->
+    <polygon points="360,480 620,480 640,680 340,680" fill="url(#heavySteel)" />
+    <!-- Heavy Radiator Louvers -->
+    <line x1="360" y1="520" x2="520" y2="520" stroke="#475569" stroke-width="6" />
+    <line x1="355" y1="540" x2="520" y2="540" stroke="#475569" stroke-width="6" />
+    <line x1="350" y1="560" x2="520" y2="560" stroke="#475569" stroke-width="6" />
+    <line x1="345" y1="580" x2="520" y2="580" stroke="#475569" stroke-width="6" />
+    <line x1="340" y1="600" x2="520" y2="600" stroke="#475569" stroke-width="6" />
+
+    <!-- FRONT BUMPER / MASSIVE STEEL PUSH BLOCK -->
+    <rect x="280" y="670" width="380" height="60" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="4" />
+    <!-- Yellow / Black Hazard Chevron on Front Bumper -->
+    <path d="M300,675 L320,725 L340,725 L320,675 Z" fill="#fbbf24" />
+    <path d="M360,675 L380,725 L400,725 L380,675 Z" fill="#fbbf24" />
+    <path d="M420,675 L440,725 L460,725 L440,675 Z" fill="#fbbf24" />
+    <path d="M480,675 L500,725 L520,725 L500,675 Z" fill="#fbbf24" />
+
+    <!-- HEAVY LED WORK LIGHTS -->
+    <rect x="300" y="685" width="40" height="25" rx="4" fill="#fef08a" stroke="#d97706" stroke-width="2" />
+    <circle cx="320" cy="697" r="16" fill="#fef08a" opacity="0.9" />
+    <rect x="600" y="685" width="40" height="25" rx="4" fill="#fef08a" stroke="#d97706" stroke-width="2" />
+
+    <!-- VERTICAL EXHAUST STACKS -->
+    <polygon points="650,280 670,280 675,500 655,500" fill="url(#chromeCylinder)" />
+    <path d="M645,280 Q660,260 675,280" stroke="#94a3b8" stroke-width="4" fill="none" />
+
+    <!-- CHASSIS RAIL FRAME (Main Cast Box Steel Beams) -->
+    <rect x="520" y="660" width="850" height="70" rx="8" fill="#0f172a" stroke="#334155" stroke-width="4" />
+    <!-- Fuel Tank (4,500 Liters Capacity) -->
+    <rect x="740" y="665" width="220" height="60" rx="10" fill="#1e293b" stroke="#06b6d4" stroke-width="2" />
+    <text x="760" y="700" fill="#38bdf8" font-family="monospace" font-size="12" font-weight="bold">DIESEL FUEL · 4500L</text>
+
+    <!-- ============================================================== -->
+    <!-- GIANT OFF-ROAD MINING TIRES (59/80R63 ULTRA CLASS TIRES)       -->
+    <!-- ============================================================== -->
+
+    <!-- FRONT WHEEL (Left Front - Steer Axle) -->
+    <g id="front-wheel">
+      <circle cx="530" cy="740" r="160" fill="url(#tireRubber)" stroke="#020617" stroke-width="8" />
+      <!-- Aggressive Lug Treads around circumference -->
+      <g stroke="#1e293b" stroke-width="16" stroke-dasharray="24 24">
+        <circle cx="530" cy="740" r="150" fill="none" />
+      </g>
+      <!-- Rim & Hub Reduction Gear -->
+      <circle cx="530" cy="740" r="82" fill="url(#wheelRim)" />
+      <circle cx="530" cy="740" r="48" fill="#1e293b" stroke="#f59e0b" stroke-width="4" />
+      <circle cx="530" cy="740" r="22" fill="#0f172a" />
+      <!-- Lug Nuts Circle -->
+      <circle cx="530" cy="740" r="64" stroke="#fbbf24" stroke-width="6" stroke-dasharray="8 20" fill="none" />
+      <!-- TPMS Wireless Sensor Icon (Teal Indicator) -->
+      <circle cx="505" cy="710" r="6" fill="#06b6d4" />
+      <circle cx="505" cy="710" r="14" fill="url(#sensorCyan)" />
+    </g>
+
+    <!-- REAR DUAL TIRES (Drive Axle - 2 Wheels per side) -->
+    <!-- Rear Tire Back Layer -->
+    <circle cx="1270" cy="740" r="170" fill="#080c14" />
+    <!-- Rear Tire Front Layer -->
+    <g id="rear-wheel">
+      <circle cx="1240" cy="740" r="165" fill="url(#tireRubber)" stroke="#020617" stroke-width="8" />
+      <g stroke="#1e293b" stroke-width="16" stroke-dasharray="26 24">
+        <circle cx="1240" cy="740" r="154" fill="none" />
+      </g>
+      <circle cx="1240" cy="740" r="82" fill="url(#wheelRim)" />
+      <circle cx="1240" cy="740" r="48" fill="#1e293b" stroke="#f59e0b" stroke-width="4" />
+      <circle cx="1240" cy="740" r="22" fill="#0f172a" />
+      <circle cx="1240" cy="740" r="64" stroke="#fbbf24" stroke-width="6" stroke-dasharray="8 20" fill="none" />
+      <!-- Rear TPMS Telemetry Sensor -->
+      <circle cx="1215" cy="710" r="6" fill="#06b6d4" />
+      <circle cx="1215" cy="710" r="14" fill="url(#sensorCyan)" />
+    </g>
+
+    <!-- REAR ROCK EJECTOR BAR (Between Dual Tires) -->
+    <polygon points="1120,680 1140,680 1130,810" fill="#475569" />
+
+    <!-- FLEET TELEMETRY & ASSET MARKINGS -->
+    <text x="820" y="440" fill="#0b0e14" font-family="'Chakra Petch', sans-serif" font-size="44" font-weight="900" letter-spacing="3">TERRAHAUL 400T</text>
+    <rect x="820" y="465" width="230" height="32" rx="4" fill="#0f172a" />
+    <text x="832" y="488" fill="#f59e0b" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="bold">UNIT: DT-101 · APEX PIT</text>
+
+    <!-- DIGITAL LOAD WEIGH SENSOR STATUS BAR ON TRUCK BODY -->
+    <rect x="820" y="520" width="340" height="20" rx="4" fill="#1e293b" stroke="#334155" stroke-width="2" />
+    <rect x="822" y="522" width="290" height="16" rx="2" fill="#10b981" />
+    <text x="830" y="535" fill="#ffffff" font-family="monospace" font-size="11" font-weight="bold">PAYLOAD TELEMETRY: 392T / 400T (98% NOMINAL)</text>
+
+  </g>
+</svg>
